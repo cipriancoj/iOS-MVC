@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5b-Z0-MFV">
+                                <rect key="frame" x="202" y="123" width="185" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="e8O-5T-XgS"/>
+                                    <constraint firstAttribute="width" constant="185" id="uFq-9Z-Hh6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coldplay" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-1g-Lwz" customClass="RoundedImageView" customModule="iOS_MVC" customModuleProvider="target">
+                                <rect key="frame" x="170" y="223" width="260" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="LWV-xG-5jm"/>
+                                    <constraint firstAttribute="width" constant="260" id="kk4-Va-W2a"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U5b-Z0-MFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9NR-Yh-yjs"/>
+                            <constraint firstItem="fmI-1g-Lwz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O9h-VA-NxA"/>
+                            <constraint firstItem="fmI-1g-Lwz" firstAttribute="top" secondItem="U5b-Z0-MFV" secondAttribute="bottom" constant="78" id="VXX-kN-Z8v"/>
+                            <constraint firstItem="U5b-Z0-MFV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="q5t-Vd-3T0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fullnameLabel" destination="U5b-Z0-MFV" id="TYg-iW-FM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coldplay" width="944" height="616"/>
+    </resources>
 </document>

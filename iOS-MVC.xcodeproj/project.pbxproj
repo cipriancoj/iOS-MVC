@@ -12,6 +12,8 @@
 		CD19B1241C7881890074518D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD19B1221C7881890074518D /* Main.storyboard */; };
 		CD19B1261C7881890074518D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD19B1251C7881890074518D /* Assets.xcassets */; };
 		CD19B1291C7881890074518D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD19B1271C7881890074518D /* LaunchScreen.storyboard */; };
+		CD19B1361C78882B0074518D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD19B1351C78882B0074518D /* Person.swift */; };
+		CD19B1381C7A6ACE0074518D /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD19B1371C7A6ACE0074518D /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CD19B1251C7881890074518D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD19B1281C7881890074518D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD19B12A1C7881890074518D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD19B1351C78882B0074518D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CD19B1371C7A6ACE0074518D /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		CD19B11D1C7881890074518D /* iOS-MVC */ = {
 			isa = PBXGroup;
 			children = (
+				CD19B1341C7887DE0074518D /* Utilities */,
+				CD19B1331C7887D80074518D /* Resources */,
+				CD19B1321C7887980074518D /* Model */,
+				CD19B1301C78877E0074518D /* View */,
+				CD19B1311C7887850074518D /* Controller */,
 				CD19B11E1C7881890074518D /* AppDelegate.swift */,
-				CD19B1201C7881890074518D /* ViewController.swift */,
 				CD19B1221C7881890074518D /* Main.storyboard */,
 				CD19B1251C7881890074518D /* Assets.xcassets */,
 				CD19B1271C7881890074518D /* LaunchScreen.storyboard */,
 				CD19B12A1C7881890074518D /* Info.plist */,
 			);
 			path = "iOS-MVC";
+			sourceTree = "<group>";
+		};
+		CD19B1301C78877E0074518D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD19B1371C7A6ACE0074518D /* RoundedImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD19B1311C7887850074518D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD19B1201C7881890074518D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD19B1321C7887980074518D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD19B1351C78882B0074518D /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CD19B1331C7887D80074518D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CD19B1341C7887DE0074518D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD19B1381C7A6ACE0074518D /* RoundedImageView.swift in Sources */,
+				CD19B1361C78882B0074518D /* Person.swift in Sources */,
 				CD19B1211C7881890074518D /* ViewController.swift in Sources */,
 				CD19B11F1C7881890074518D /* AppDelegate.swift in Sources */,
 			);
